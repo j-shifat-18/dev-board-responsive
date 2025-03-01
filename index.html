@@ -19,30 +19,30 @@
   <body class="font-poppins primary-color">
     <header class="py-4 w-11/12 mx-auto">
       <!-- Nav bar -->
-      <div class="navbar bg-white shadow-sm rounded-2xl p-4">
+      <div class="navbar flex flex-row md:flex-row bg-white shadow-sm rounded-2xl p-2 md:p-4">
         <div class="flex-1 flex gap-3 items-center">
-          <img class="w-12" src="./images/logo.png" alt="" />
-          <p class="text-4xl">Dev<span class="font-extrabold">Board</span></p>
+          <img class="w-8 lg:w-12" src="./images/logo.png" alt="" />
+          <p class="text-3xl md:text-4xl">Dev<span class="font-extrabold">Board</span></p>
         </div>
-        <div class="flex-none flex gap-8 items-center">
-          <div class="flex justify-center items-center gap-2 px-4 py-2 primary-color rounded-full">
-            <img class="w-8 h-8" src="./images/checkbox.png" alt="" />
-            <p id="task-completed" class="font-bold text-3xl">23</p>
+        <div class="flex-none flex gap-2 md:gap-6 lg:gap-8 items-center">
+          <div class="flex justify-center items-center gap-2 px-2 md:px-4 py-2 primary-color rounded-full">
+            <img class="w-6 h-6 md:w-8 md:h-8" src="./images/checkbox.png" alt="" />
+            <p id="task-completed" class="font-bold text-2xl md:text-3xl">23</p>
           </div>
           <div id="theme-btn" class="primary-color rounded-full p-2">
-            <img src="./images/theme-btn.png" alt="" />
+            <img class="w-8 h-8 md:w-10 md:h-10" src="./images/theme-btn.png" alt="" />
           </div>
         </div>
       </div>
     </header>
 
-    <main class="w-11/12 mx-auto pb-14 grid grid-cols-4 gap-4">
-      <div class="rounded-2xl col-span-3 bg-white p-4">
+    <main class="w-11/12 mx-auto pb-14 grid grid-cols-1 lg:grid-cols-4 gap-4">
+      <div class="rounded-2xl lg:col-span-3 bg-white p-4">
         <!-- task board -->
         <section id="task-board" class="">
           <!-- top cards -->
           <div
-            class="grid grid-cols-4 gap-3 pb-8 border-b-2 border-dashed border-[#3752FD]/20"
+            class="grid lg:grid-cols-4 gap-3 pb-8 border-b-2 border-dashed border-[#3752FD]/20"
           >
             <!-- card 1 -->
             <div class="flex gap-4 p-3 primary-color rounded-2xl items-center">
@@ -80,7 +80,7 @@
         <!-- task cards sections -->
         <section class="mt-8">
           <!-- cards -->
-          <div class="grid grid-cols-3 gap-8">
+          <div class="grid lg:grid-cols-3 gap-8">
             <!-- card 1 -->
             <div class="primary-color rounded-2xl p-4">
               <div class="pb-3 border-b-2 border-dashed border-[#3752FD]/20">
