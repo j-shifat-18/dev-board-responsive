@@ -10,14 +10,23 @@ document
 document.getElementById("theme-btn").style.cursor = "pointer";
 document.getElementById("theme-btn").addEventListener("click", function () {
   
-  const randomColorCode =
-    "#" +
-    Math.floor(Math.random() * 16777215)
-      .toString(16)
-      .padStart(6, "0");
-  const elements = document.getElementsByClassName("primary-color");
+  // const randomColorCode =
+  //   "#" +
+  //   Math.floor(Math.random() * 16777215)
+  //     .toString(16)
+  //     .padStart(6, "0");
+  // const elements = document.getElementsByClassName("primary-color");
 
-  elements[0].style.backgroundColor = randomColorCode;
+  // elements[0].style.backgroundColor = randomColorCode;
+
+
+  const r = Math.floor(Math.random()*156)+150;
+  const g = Math.floor(Math.random()*156)+150;
+  const b = Math.floor(Math.random()*156)+150;
+
+  const color = `rgb(${r},${g},${b})`;
+  document.getElementById("body").style.backgroundColor = color ;
+
 });
 
 // date
