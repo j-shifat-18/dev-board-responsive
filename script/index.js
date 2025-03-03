@@ -20,9 +20,9 @@ document.getElementById("theme-btn").addEventListener("click", function () {
   // elements[0].style.backgroundColor = randomColorCode;
 
 
-  const r = Math.floor(Math.random()*156)+150;
-  const g = Math.floor(Math.random()*156)+150;
-  const b = Math.floor(Math.random()*156)+150;
+  const r = Math.floor(Math.random()*56)+200;
+  const g = Math.floor(Math.random()*56)+200;
+  const b = Math.floor(Math.random()*56)+200;
 
   const color = `rgb(${r},${g},${b})`;
   document.getElementById("body").style.backgroundColor = color ;
